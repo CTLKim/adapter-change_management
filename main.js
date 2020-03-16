@@ -119,7 +119,7 @@ function get(serviceNowTable, callback) {
   // Some properties are read from global const options.
   // Some properties are passed into function get() through parameters.
   const requestOptions = {
-    method: 'GET',
+    method: 'post',
     auth: {
       user: options.username,
       pass: options.password,
@@ -154,7 +154,6 @@ function get(serviceNowTable, callback) {
   });
 
 }
-
 /*
  * This section is used to test your project.
  * We will test both get() and post() functions.
